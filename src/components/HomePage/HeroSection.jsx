@@ -10,13 +10,13 @@ const HeroSection = () => {
 
                     {/* Left Section - Text Content */}
                     <div className="text-center sm:text-left lg:justify-start">
-                        <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl text-gray-900 mb-4">
+                        <h1 className="font-bold text-2xl md:text-3xl  text-gray-900 mb-4">
                             ចំណេះដឹងអប់រំសុខភាពផ្ទាល់ខ្លួន
                         </h1>
                         <p className="font-regular text-lg sm:text-xl text-gray-900 mb-6">
                             រៀនអំពីការថែទាំសុខភាពអាហារូបត្ថម្ភ និងសុខភាពផ្លូវចិត្ត ក្នុងអំឡុងពេលមានផ្ទៃពោះ
                         </p>
-                        <a href="#" className="text-rose-300 text-lg font-bold inline-flex transition duration-300 hover:text-white">
+                        <a href="#" className="text-rose-300 text-lg md:mb-12 font-bold inline-flex transition duration-300 hover:text-white">
                             ស្វែងយល់បន្ថែម →
                         </a>
                     </div>
@@ -54,13 +54,13 @@ const HeroSection = () => {
 
                     {/* Right Section - Text Content */}
                     <div className="text-center sm:text-left lg:ml-10">
-                        <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl text-gray-900 mb-4">
+                        <h1 className="font-bold text-2xl md:text-3xl  text-gray-900 mb-4">
                             ចែករំលែក
                         </h1>
                         <p className="font-regular text-lg sm:text-xl text-gray-900 mb-6">
                             ភ្ជាប់ជាមួយស្រ្តីមានផ្ទៃពោះដទៃទៀត ដើម្បីចែករំលែកបទពិសោធន៍ និងទទួលបានការគាំទ្រ
                         </p>
-                        <a href="#" className="text-rose-300 text-lg font-bold inline-flex transition duration-300 hover:text-white">
+                        <a href="#" className="text-rose-300 text-lg md:mb-14 mb-14 font-bold inline-flex transition duration-300 hover:text-white">
                             ស្វែងយល់បន្ថែម →
                         </a>
                     </div>
@@ -80,7 +80,7 @@ const HeroSection = () => {
 
                     {/* Left Section - Text Content */}
                     <div className="text-center sm:text-left lg:justify-start">
-                        <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl text-gray-900 mb-4">
+                        <h1 className="font-bold text-2xl md:text-3xl text-gray-900 mb-4">
                             ពិភាក្សាជាមួយ AI
                         </h1>
                         <p className="font-regular text-lg sm:text-xl text-gray-900 mb-6">

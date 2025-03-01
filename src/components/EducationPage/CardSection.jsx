@@ -30,10 +30,10 @@ const CardSection = () => {
   ];
 
   return (
-    <div className="bg-gray-100 pt-16 pb-16">
+    <div className="bg-gradient-to-b from-white to-white mt-5 pt-14 pb-4">
       {/* Title Section */}
       <div className="text-center mb-12 sm:mb-12">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">អត្ថបទសម្រាប់ថ្ងៃនេះ</h1>
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">អត្ថបទ​ និង វីដេអូសុខភាព</h1>
       </div>
 
       {/* Responsive Card Grid */}
@@ -42,8 +42,9 @@ const CardSection = () => {
           {cards.map((card) => (
             <div
               key={card.id}
-              className="bg-white shadow-md rounded-xl overflow-hidden 
-                         transition-transform transform hover:scale-105 hover:bg-rose-100 
+              // 'group' allows child elements to respond to the parent's hover state
+              className="group bg-gray-100 shadow-md rounded-xl overflow-hidden 
+                         transition-transform transform hover:scale-105 hover:bg-blue-300 
                          w-[90%] sm:w-full sm:max-w-xs md:max-w-sm lg:max-w-md h-auto mx-auto p-4 sm:p-6 
                          cursor-pointer"
             >
@@ -59,18 +60,18 @@ const CardSection = () => {
               {/* Card Content */}
               <div className="p-3 sm:p-6 text-center">
                 {/* Base color is text-gray-800; turns white on hover */}
-                <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2 ">
+                <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2 group-hover:text-white">
                   {card.title}
                 </h3>
                 {/* Base color is text-gray-600; turns white on hover */}
-                <p className="font-regular text-gray-600 text-sm mb-4 ">
+                <p className="font-regular text-gray-600 text-sm mb-4 group-hover:text-white">
                   {card.description}
                 </p>
                 <div className="text-center">
                   {/* Base color is text-blue-500; turns white on hover */}
                   <a
                     href="#"
-                    className="font-regular text-blue-500 inline-flex items-center hover:text-blue-700"
+                    className="font-regular text-blue-500 inline-flex items-center group-hover:text-white"
                   >
                     <span className="lg:mt-5">ស្វែងយល់បន្ថែម</span>
                     <svg

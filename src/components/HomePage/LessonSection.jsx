@@ -45,7 +45,7 @@ const LessonSection = () => {
             <div className="bg-gray-100 py-30 px-10">
                 {/* Title Section */}
                 <div className="max-w-7xl mx-auto">
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-12">
+                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-12">
                         Title
                     </h1>
 
@@ -76,26 +76,26 @@ const LessonSection = () => {
             </div>
 
             {/* Bottom Cards Section */}
-            <div className="bg-white py-30 px-10">
+            <div className="bg-white py-30 px-10 cursor-pointer">
                 {/* Title Section */}
                 <div className="max-w-7xl mx-auto justify-start mt-5">
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-12">
+                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-12">
                         Title
                     </h1>
 
-                    {/* Bottom Cards Grid */}
-                    <div className="flex justify-between gap-x-10">
+                    {/* Bottom Cards Grid - NOW GRID WITH 1 COLUMN ON PHONE, 3 ON DESKTOP */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {bottomcards.map((card) => (
                             <div
                                 key={card.id}
-                                className="w-[30%] transition-transform duration-300 transform hover:scale-105"
+                                className="w-full transition-transform duration-300 transform hover:scale-105"
                             >
                                 {/* Image Section */}
                                 <div className="w-full flex justify-center p-4">
                                     <img
                                         src={card.image}
                                         alt="Pregnancy Care"
-                                        className="w-[100%] h-auto object-cover rounded-lg"
+                                        className="w-full h-auto object-cover rounded-lg"
                                     />
                                 </div>
 
